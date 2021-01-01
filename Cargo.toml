@@ -1,6 +1,11 @@
 [package]
 name = "cargo-edit-version"
+description = "Edits the package version in Cargo.toml to specified one."
 version = "0.1.0"
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/siketyan/cargo-edit-version"
+repository = "https://github.com/siketyan/cargo-edit-version.git"
 authors = ["Naoki Ikeguchi <root@siketyan.dev>"]
 edition = "2018"
 
