@@ -85,6 +85,12 @@ jobs:
           command: edit-version
           args: ${{ github.event.release.tag_name }}
 
+      - name: Log into crates.io
+        uses: actions-rs/cargo@v1
+        with:
+          command: login
+          args: ${{ secrets.CRATES_IO_TOKEN }}
+
       - name: Publish to crates.io
         uses: actions-rs/cargo@v1
         with:
